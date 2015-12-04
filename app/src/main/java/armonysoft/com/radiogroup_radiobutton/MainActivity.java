@@ -71,16 +71,17 @@ public class MainActivity extends AppCompatActivity {
 
         //if para saber cual radiobutton esta seleccionado.
         //== se utiliza para comparar en java
+        // r1.isChecked()==true es mejor utilizar r1.isChecked()
         if(r1.isChecked()==true){
             int suma = nro1 + nro2;
+            //se convierte a string y se envia el resultado
             String resu = String.valueOf(suma);
             tv3.setText(resu);
         } else {
-            if(r2.isChecked()==true){
-                int resta = nro1 - nro2;
-                String resu = String.valueOf(resta);
-                tv3.setText(resu);
-            }
+            int resta = nro1 - nro2;
+            String resu = String.valueOf(resta);
+            tv3.setText(resu);
+
         }
     }
 
